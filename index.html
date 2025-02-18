@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Task 1: Dynamic Content Update -->
+    <main id="main-section">
+        <h1 id="main_header">Welcome to my Page</h1>
+        <p id="main_paragraph">This is the initial content.</p>
+        <button onclick="task1()">Change Content</button>
+    </main>
+
+    <!-- Task 2: Interactive Image Gallery -->
+    <div id="image-gallery">
+        <img src="silly_dog.jpeg" alt="Silly Dog" class="gallery-img" onclick="toggleImageSize(this)">
+        <img src="silly_art.jpg" alt="Silly Art" class="gallery-img" onclick="toggleImageSize(this)">
+        <img src="beach_shore.jpg" alt="Beach Shore" class="gallery-img" onclick="toggleImageSize(this)">
+    </div>
+
+    <!-- Task 3: Animated Circle -->
+    <div id="circle"></div>
+
+    <!-- Task 4: Form with Real-time Feedback -->
+    <form class="form-inline">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username" name="username">
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter age" name="age" oninput="checkAge()">
+        
+        <p id="feedback-output"></p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
